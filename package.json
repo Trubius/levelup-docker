@@ -1,0 +1,11 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:codingsans/level-up/docker.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "typescript": "^3.6.4"
+  }
+}
