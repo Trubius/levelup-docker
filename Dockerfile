@@ -2,13 +2,12 @@ FROM node:8
 
 WORKDIR /app
 
-COPY package.json /app
+COPY package.json yarn.lock ./
 
 RUN yarn install
 
-COPY .prettierrc /app
-
-ADD src /app/src
+ADD tsconfig.json ./
+ADD src ./src
 
 RUN yarn build
 
